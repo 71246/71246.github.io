@@ -34,6 +34,6 @@ input[type="submit"]:hover{
     border-color: var(--secondary-red);
 }
 
-input:hover {
+form[name="subscribe"] input:hover {
     border-left: 8px solid var(--default-shadow);
 }
