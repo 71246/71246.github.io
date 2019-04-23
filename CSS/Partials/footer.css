@@ -1,0 +1,44 @@
+@import "form.css";
+
+footer{
+    position: relative;
+    width: 100%;
+    background-color: var(--primary-black);
+    color: var(--primary-orange);
+    margin-top: 0;  
+    padding: 25px 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer div div {
+    min-width: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer div div span {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 20px;
+}
+
+footer .brandName {
+    margin: 0;
+}
+
+footer div p{
+    display: flex;
+    justify-content: center;
+}
+
+footer small {
+    position: absolute;
+    left: center    ;
+    bottom: 10px;
+}

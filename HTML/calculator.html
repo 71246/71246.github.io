@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>SDA Training - Calculator</title>
+        <link rel="icon" type="image/x-icon" href="../Static/images/html-tag-icon-614x460.png">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+        <link rel="stylesheet" href="../CSS/calculator.css" /link>
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <i class="fas fa-hamburger"></i>
+                <p class="brandName">SDA<span style="color:whitesmoke"><strong>TRAINING</strong></span></p>
+            </div>
+            <nav>
+                <a href="../index.html"><i class="fas fa-igloo"></i></a>
+                <a href="../HTML/blog.html"><i class="fab fa-blogger-b"></i></a>
+                <a href="../HTML/calculator.html" class="activeMenu"><i class="fas fa-calculator"></i></a>
+                <a href="../HTML/register.html"><i class="far fa-user"></i></a>
+            </nav>
+        </header>
+
+        <form name="calc">
+            <table id="calc" border=2>
+                <tr>
+                    <td colspan=5><input id="btn" name="display" onkeypress="return event.charCode >= 48 && event.charCode <= 57" type="text"></td>
+                    <td style="display:none"><input name="M" type="number"></td>
+                </tr>
+                <tr>
+                    <td><input id="btn" type=button value="MC" OnClick="calc.M.value=''"></td>
+                    <td><input id="btn" type=button value="0" OnClick="calc.display.value+='0'"></td>
+                    <td><input id="btn" type=button value="1" OnClick="calc.display.value+='1'"></td>
+                    <td><input id="btn" type=button value="2" OnClick="calc.display.value+='2'"></td>
+                    <td><input id="btn" type=button value="+" OnClick="calc.display.value+='+'"></td>
+                </tr>
+                <tr>
+                    <td><input id="btn" type=button value="MS" OnClick="calc.M.value=calc.display.value"></td>
+                    <td><input id="btn" type=button value="3" OnClick="calc.display.value+='3'"></td>
+                    <td><input id="btn" type=button value="4" OnClick="calc.display.value+='4'"></td>
+                    <td><input id="btn" type=button value="5" OnClick="calc.display.value+='5'"></td>
+                    <td><input id="btn" type=button value="-" OnClick="calc.display.value+='-'"></td>
+                </tr>
+                <tr>
+                    <td><input id="btn" type=button value="MR" OnClick="calc.display.value=calc.M.value"></td>
+                    <td><input id="btn" type=button value="6" OnClick="calc.display.value+='6'"></td>
+                    <td><input id="btn" type=button value="7" OnClick="calc.display.value+='7'"></td>
+                    <td><input id="btn" type=button value="8" OnClick="calc.display.value+='8'"></td>
+                    <td><input id="btn" type=button value="x" OnClick="calc.display.value+='*'"></td>
+                </tr>
+                <tr>
+                    <td><input id="btn" type=button value="M+" OnClick="calc.M.value=(Number(calc.M.value))+(Number(calc.display.value))"></td>
+                    <td><input id="btn" type=button value="9" OnClick="calc.display.value+='9'"></td>
+                    <td><input id="btn" type=button value="±" OnClick="calc.display.value=(calc.display.value==Math.abs(calc.display.value)?-(calc.display.value):Math.abs(calc.display.value))"></td>
+                    <td><input id="btn" type=button value="=" OnClick="calc.display.value=eval(calc.display.value)"></td>
+                    <td><input id="btn" type=button value="/" OnClick="calc.display.value+='/'"></td>
+                </tr>
+                <tr>
+                    <td><input id="btn" type=button value="1/x" OnClick="calc.display.value=1/calc.display.value"></td>
+                    <td><input id="btn" type=button value="." OnClick="calc.display.value+='.'"></td>
+                    <td><input id="btn" type=button value="x2" OnClick="calc.display.value=Math.pow(calc.display.value,2)"></td>
+                    <td><input id="btn" type=button value="√" OnClick="calc.display.value=Math.sqrt(calc.display.value)"></td>
+                    <td><input id="btn" type=button value="C" OnClick="calc.display.value=''"></td>
+                </tr>
+            </table>
+        </form>
+
+        <footer>
+            <div>
+                <p class="brandName">SDA<span style="color:whitesmoke"><strong>TRAINING</strong></span></p>
+                <div>
+                    <span>
+                        <h5>COMPANY</h5>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Privacy Policy</a>
+                    </span>
+
+                    <span>
+                        <h5>SUPPORT</h5>
+                        <a href="#">Help</a>
+                        <a href="#">Documentation</a>
+                        <a href="#">Customer Service</a>
+                    </span>
+                </div>
+            </div>
+
+            <form action="#">
+                <h5>SUBSCRIBE TO NEWSLETTER</h5>
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <input type="submit" placeholder="Subscribe" />
+            </form>
+
+            <small>Copyright &copy; 2019 BLEEPBLOOP</small>
+        </footer>
+    </body>
+</html>

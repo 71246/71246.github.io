@@ -1,0 +1,39 @@
+form {
+    min-width: 30%;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+footer input {
+    margin: 3px 0;
+    min-width: 280px;
+    width: 90%;
+
+    border-radius: var(--default_radius);
+    padding: 3px 8px;
+    font-size: 0.8rem;
+    text-align: center;
+    outline: none;
+
+    border-left: 3px solid var(--primary-orange);
+    box-shadow: var(--default-shadow);
+    flex-wrap: wrap;
+}
+
+input[type="submit"] {
+    background-color: var(--primary-orange);
+    border-color: var(--primary-orange); 
+}
+
+input[type="submit"]:hover{
+    background-color: var(--secondary-red);
+    border-color: var(--secondary-red);
+}
+
+input:hover {
+    border-left: 8px solid var(--default-shadow);
+}

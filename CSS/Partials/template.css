@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Roboto');
+@import "header.css";
+@import "footer.css";
+
+:root {
+    --primary-orange: rgb(255, 158, 30);
+    --primary-green: lightgreen;
+    --secondary-green: #18a888;
+    --default-blue: #00bfff;
+    --secondary-blue: #00ccff;
+    --primary-blue: #2962ff;
+    --primary-yellow: gold;
+    --secondary-yellow: goldenrod;
+    --primary-red: tomato;
+    --secondary-red: crimson;
+    --primary-white: white;
+    --secondary-white: #fbfbfb;
+    --primary-grey: #eee;
+    --secondary-grey: #bbb;
+    --primary-black: #2d333a;
+    --secondary-black: #262b30;
+    --para-color: rgba(0,0,0,0.87);
+    --info-color: #777;
+    --default-radius: 2px;
+    --default-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+*{
+    box-sizing: border-box;
+    transition: all 0.8 ease-out;
+}
+    
+body{
+    font-family: "Dosis";
+    margin: 0;
+    padding-top: 50px;
+    background-color: var(--primary-black);
+}
+
+.content{
+    height: 2000px;
+}
+
+.brandName {
+    margin: 0;
+    font-size: 1.3rem;
+    color: var(--primary-orange);
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+    color: var(--secondary-grey);
+}
+
+a:hover {
+    color: var(--primary-orange);
+}
+
+.section {
+    background-color: var(--primary-black);
+    padding: 130px 0px; 
+}
+
+section {
+    display: block;
+    overflow: hidden;
+    border-radius: var(--default-radius);
+    box-shadow: var(--default-shadow);
+}
